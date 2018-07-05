@@ -12,6 +12,8 @@
 \usepackage[ngerman]{babel} % Deutsche Sprachanpassungen
 \usepackage[T1]{fontenc}    % Silbentrennung bei Sonderzeichen
 \usepackage[utf8]{inputenc} % Direkte Angabe von Umlauten im Dokument.Wenn Sie an einem Mac sitzen,verwenden Sie ggf. „macce“ anstatt „utf8“.
+\usepackage[style=numeric,backend=biber, sorting=nyt,natbib=true]{biblatex} % Alternative Zitierung mit [x]
+\bibliography{references}
 \usepackage[autostyle=true,german=quotes]{csquotes} % Anfuehrungszeichen\
 }{
 \usepackage[utf8x]{inputenc}}
@@ -25,7 +27,7 @@
 \usepackage{nicefrac}
 \usepackage{amsmath}
 \usepackage[T1]{fontenc}
-\usepackage{cite}
+%\usepackage{cite}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{float}
@@ -46,16 +48,14 @@
 \interfootnotelinepenalty=10000
 
 %opening
-\def\ThesisTitle{My awesome title}
-\def\ThesisAuthor{John Doe}
-\def\ThesisLocation{Sankt Augustin}
-\def\ThesisType{Master}
-\def\CourseType{Master of Computer Science}
+\def\ThesisTitle{Evaluierung und Anwendung moderner Designprozesse bei der Startup-Gründung}
+\def\ThesisAuthor{Verena Schmöller}
+\def\ThesisLocation{Regensburg}
+\def\ThesisType{Bachelor}
+\def\CourseType{B.Sc. Technische Informatik}
 \def\ThesisPubDate{\today} % Change here to the date you are going to print your thesis
-\def\ThesisFirstSupervisor{Prof. Dr. Karl Jonas}
-\def\ThesisSecondSupervisor{Prof. Dr. John Doe}
-\def\ThesisExternalSupervisor{Dr. Who}
-\def\ThesisExternalCompany{BBC}
+\def\ThesisFirstSupervisor{Prof. Dr. Markus Heckner}
+\def\ThesisSecondSupervisor{???}
 \def\ThesisSubject{}
 
 
@@ -152,14 +152,14 @@
 %\bibliographystyle{plainnat} % author and year
 %\bibliographystyle{amsalpha} % author and year short
 %\bibliographystyle{alphaabbr} % author short and year
-\bibliographystyle{alpha} % author and year
+%\bibliographystyle{alpha} % author and year
 %\bibliographystyle{plain} % only numbers
 %\bibliographystyle{unibonn_ay} % a special file used for the uni bonn
 
 % Start of the appendix
 \appendix 
 % The appendix is a chapter
-\include{chapter/appendix}
+%\include{chapter/appendix}
 
 
 
